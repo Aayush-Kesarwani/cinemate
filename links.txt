@@ -1,5 +1,0 @@
-api key = ed42741fa744ee65762eda64223559c9
-
-api read access token = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDQyNzQxZmE3NDRlZTY1NzYyZWRhNjQyMjM1NTljOSIsInN1YiI6IjY2NjF
-                        iNDhjMmJmNjBhOTJjOWE0MjlmOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.S_d6-6cwCKD_YO
-                        L5y5aXmAuww2lPkMUAftFtvhh-SR4
