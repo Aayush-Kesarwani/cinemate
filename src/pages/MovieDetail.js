@@ -33,12 +33,11 @@ export const MovieDetail = () => {
           <img className="rounded" src={image} alt={movie.title} />
         </div>
         <div className="max-w-2xl text-gray-700 text-lg dark:text-white">
-          <h1 className="text-4xl font-bold my-3 text-center lg:text-left">
-            {movie.title}
-          </h1>
-          <p className="my-4">{movie.overview}</p>
+          <h1 className="text-4xl font-bold my-3 text-center">{movie.title}</h1>
+          <p className="my-4 text-center">{movie.overview}</p>
+
           {movie.genres ? (
-            <p className="my-7 flex flex-wrap gap-2">
+            <p className="my-7 flex flex-wrap gap-2 justify-center">
               {movie.genres.map((genre) => (
                 <span
                   className="mr-2 border border-gray-200 rounded dark:border-gray-600 p-2"
@@ -52,7 +51,7 @@ export const MovieDetail = () => {
             ""
           )}
 
-          <div className="flex items-center">
+          <div className="flex items-center md:">
             <svg
               aria-hidden="true"
               className="w-5 h-5 text-yellow-400"
@@ -72,36 +71,38 @@ export const MovieDetail = () => {
             </span>
           </div>
 
-          <p className="my-4">
-            <span className="mr-2 font-bold">Runtime:</span>
-            <span>{movie.runtime} min.</span>
-          </p>
+          <div className="text-start">
+            <p className="my-4">
+              <span className="mr-2 font-bold">Runtime:</span>
+              <span>{movie.runtime} min.</span>
+            </p>
 
-          <p className="my-4">
-            <span className="mr-2 font-bold">Budget:</span>
-            <span>{movie.budget}</span>
-          </p>
+            <p className="my-4">
+              <span className="mr-2 font-bold">Budget:</span>
+              <span>${movie.budget}</span>
+            </p>
 
-          <p className="my-4">
-            <span className="mr-2 font-bold">Revenue:</span>
-            <span>{movie.revenue}</span>
-          </p>
+            <p className="my-4">
+              <span className="mr-2 font-bold">Revenue:</span>
+              <span>${movie.revenue}</span>
+            </p>
 
-          <p className="my-4">
-            <span className="mr-2 font-bold">Release Date:</span>
-            <span>{movie.release_date}</span>
-          </p>
+            <p className="my-4">
+              <span className="mr-2 font-bold">Release Date:</span>
+              <span>{movie.release_date}</span>
+            </p>
 
-          <p className="my-4">
-            <span className="mr-2 font-bold">IMDB Code:</span>
-            <a
-              href={`https://www.imdb.com/title/${movie.imdb_id}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {movie.imdb_id}
-            </a>
-          </p>
+            <p className="my-4">
+              <span className="mr-2 font-bold">IMDB Code:</span>
+              <a
+                href={`https://www.imdb.com/title/${movie.imdb_id}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {movie.imdb_id}
+              </a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
